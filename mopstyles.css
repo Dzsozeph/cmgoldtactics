@@ -26,6 +26,7 @@
 	#card8, 
 	#card9  {
 	width: 80vw !important;
+    height: 30vh !important;
     margin: 0 auto;   /* középre igazítja */
     position: relative; /* inkább relative, hacsak nem akarsz abszolút elrendezést */
   }
