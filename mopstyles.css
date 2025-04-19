@@ -43,7 +43,13 @@
 
   }
 }
-
+@keyframes shake-horizontal {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
 .montserrat-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -274,17 +280,24 @@ h2{
 		background-color: black;
 		height: 30vh;
 		border-radius: 30px;
+}
+	
+	#card1:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
+	#card2 { 
+	background-image: url("brew.webp");
+	background-position: center;
+	background-color: black;
+	background-repeat: no-repeat;
+	height: 30vh;
+	border-radius: 30px;
 
 	}
-		#card2{
-		background-image: url("brew.webp");
-		background-position: center;
-		background-size: cover;
-		background-color: black;
-	    background-repeat: no-repeat;
-		height: 30vh;
-		border-radius: 30px;
-	}
+
+	#card2:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 		#card3{
 		background-image: url("gate.webp");
 		background-position: center;
@@ -293,7 +306,11 @@ h2{
 		background-repeat: no-repeat;
 		height: 30vh;
 		border-radius: 30px;
+	
 	}
+	#card3:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 		#card4{
 		background-image: url("shadowpan.jpg");
 		background-position: center;
@@ -302,7 +319,11 @@ h2{
 		background-repeat: no-repeat;
 		height: 30vh;
 		border-radius: 30px;
+			
 	}
+	#card4:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 		#card5{
 		background-image: url("siege2.webp");
 		background-position: center;
@@ -310,8 +331,13 @@ h2{
 		background-color: black;
 		background-repeat: no-repeat;
 		height: 30vh;
-			border-radius: 30px;
+		border-radius: 30px;
+			
 	}
+
+	#card5:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 		#card6{
 		background-image: url("mogu.webp");
 		background-position: center;
@@ -319,9 +345,13 @@ h2{
 		background-color: black;
 		background-repeat: no-repeat;
 		height: 30vh;
-			border-radius: 30px;
+		border-radius: 30px;
+		
 			
 	}
+	#card6:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 		#card7{
 		background-image: url("scholomance.jpg");
 		background-position: bottom 20px;
@@ -329,8 +359,12 @@ h2{
 		background-color: black;
 		background-repeat: no-repeat;
 		height: 30vh;
-			border-radius: 30px;
+		border-radius: 30px;
+			
 	}
+	#card7:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 		#card8{
 		background-image: url("scarlethall.webp");
 		background-position: center;
@@ -338,8 +372,13 @@ h2{
 		background-color: black;
 		background-repeat: no-repeat;
 		height: 30vh;
-			border-radius: 30px;
+		border-radius: 30px;
+		
 	}
+
+	#card8:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 		#card9{
 		background-image: url("monastery.jpg");
 		background-position: bottom -50px;
@@ -348,7 +387,12 @@ h2{
 		background-repeat: no-repeat;
 		height: 30vh;
 		border-radius: 30px;
+		
 	}
+
+	#card9:hover{ 
+		animation: shake-horizontal 0.5s ease-in-out;
+}
 
 footer{
 	width: 100%;
