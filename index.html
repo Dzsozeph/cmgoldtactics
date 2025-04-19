@@ -5,9 +5,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="mopstyles.css">
+<link rel="icon" href="WoW_icon.ico" type="image/x-icon">
+<title>WoW CM Gold Tactics</title>
 </head>
 
 <body>
+		<div id="preloader">
+	<div class="loader-text montserrat-font">Loading...</div>
+		</div>
 <header></header>
 
 <main>
@@ -161,6 +166,18 @@ function openSmallWindow(filePath) {
     behavior: "smooth"
   });
 });
+	
+	
+		let currentSlide = 0;
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("fade-out");
+
+    // opcionálisan teljes eltávolítás az animáció után
+    setTimeout(() => {
+      preloader.remove();
+    }, 6000); // megegyezik a CSS transition idővel
+  });  
 </script>
 </body>
 </html>
