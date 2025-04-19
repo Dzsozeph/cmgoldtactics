@@ -9,16 +9,16 @@
 <style>
 	/* --------------------------------------------------------MEDIA QUERYK--------------------------------------------*/
 	
+@media (max-width: 1250px) {
+			.boss-container {
+			min-width: 100%;
+		    
+		}
 	
 	@media (max-width: 768px) {
   .boss-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .boss-info {
-    width: 100%;
-    max-width: 20rem;
   }
 
   .boss-image img {
@@ -29,8 +29,40 @@
   .boss-tactic {
     width: 100%;
     margin-top: 2rem;
+
   }
+  .logo-container{
+	display:none;
+		}
 }
+		
+.content{
+			padding: 0;
+			font-size: 1rem !important;
+		}
+			
+}
+	
+		@media (max-width: 768px) {
+			.content{
+			text-align: center;
+			position: relative;
+			font-size: 0.9rem !important;
+			max-width: 40rem !important;
+			display: flex;
+			overflow: hidden;
+		}
+			
+			.boss-tactic{
+				min-width: 130% !important;
+				padding: 0;
+				
+			}
+			
+			.boss-container{
+				padding: 0.5rem !important;
+			}
+			}
 	.montserrat-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
