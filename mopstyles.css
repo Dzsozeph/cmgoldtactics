@@ -15,7 +15,21 @@
 }
 
 
-
+@media (max-width: 736px) {
+    #card1,
+	#card2, 
+	#card3,
+	#card4, 
+	#card5, 
+	#card6, 
+	#card7, 
+	#card8, 
+	#card9  {
+	width: 80vw !important;
+    margin: 0 auto;   /* középre igazítja */
+    position: relative; /* inkább relative, hacsak nem akarsz abszolút elrendezést */
+  }
+}
 .montserrat-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
