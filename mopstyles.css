@@ -11,9 +11,9 @@
     display: grid !important;
     grid-template-columns: repeat(1, 1fr) !important;
     gap: 20px;
+	padding: 0;
   }
 }
-
 
 @media (max-width: 736px) {
     #card1,
@@ -25,10 +25,14 @@
 	#card7, 
 	#card8, 
 	#card9  {
-	width: 80vw !important;
+		
+	width: 100%;
     height: 40vh !important;
     margin: 0 auto;   /* középre igazítja */
     position: relative; /* inkább relative, hacsak nem akarsz abszolút elrendezést */
+	align-content: center;
+	justify-content: center;
+
   }
 }
 .montserrat-font {
@@ -48,7 +52,7 @@
 body, html {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  overflow: scroll;
+  overflow: hidden
 
 }
 
