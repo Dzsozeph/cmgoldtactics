@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Luxurious+Script&display=swap" rel="stylesheet">
+<style>
+	
+	.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+	
+	.birthstone-regular {
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s ease;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  overflow: auto;
+}
+
+
+header {
+  width: 80vw;
+  height: 30vh;
+  background-image: url("shadowpan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  margin: 0 auto;
+}
+.logo-container{
+	position: absolute;
+	top: 12vh;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	width: 7rem;
+	height: 7rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url("wowlogo.png");
+	background-size: cover;
+    z-index: 2;
+	}
+
+ .boss-container {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.boss-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+  background-color: #2b2b2b;
+  padding: 1rem;
+}
+
+.boss-image img {
+  width: 18rem;
+  height: 35vh;
+background-size: cover;
+background-position: center;
+ 
+
+}
+
+.boss-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+	 text-align: center;
+}
+
+.boss-hp {
+  color: #ff4d4d;
+  text-align: center;
+}
+
+.boss-spells ul {
+  padding-left: 1.2rem;
+  text-align: center;
+  list-style: none;
+}
+
+.boss-tactic {
+  flex: 1;
+  background-color: #2b2b2b;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+	h2{
+	text-align: center;
+		font-size: 3rem;
+	}	
+
+	
+	
+	.content{
+		padding: 2rem;
+		margin: 50px;
+		font-size: 1.2rem;
+	}
+	
+	li{
+	border-left: solid 5px rgba(181,126,7,1.00);
+		border-bottom: solid 1px rgba(39,75,10,1.00);
+	}
+		
+			
+	li:hover{
+		border-bottom: solid 12px white;
+
+	}
+	.instance-name{
+		position: relative;
+		text-align: center;
+		color: white;
+		font-size: 4rem;
+		z-index: 1;
+		
+	}
+	.instance-name::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7); /* sötét overlay */
+	transition: opacity 0.3s ease;
+	z-index: -1; /* szöveg fölött maradjon */
+	
+		}
+
+	footer{
+	width: 100%;
+	height: 5vh;
+	position: relative;
+	bottom: 0;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(0,0,0,0.85);
+	color: white;
+	font-size: 0.9rem;
+	padding: 15px;
+}
+	</style>
+	
+	
+</head>
+
+<body>
+	<header>
+	<div class="instance-name birthstone-regular">Shadowpan Monastery</div>
+	</header>
+	<div class="logo-container"></div>
+	<div class="boss-container">
+  <div class="boss-info">
+    <div class="boss-image">
+      <img src="shadowpan_monastery/gu.PNG" alt="Boss neve">
+    </div>
+    <div class="boss-name montserrat-font">Gu Cloudstrike</div>
+    <div class="boss-hp">HP: 843.100 </div>
+    <div class="boss-spells">
+      <ul>
+        <li>Invoke Lightning</li>
+        <li>Static Field </li>
+        <li>Charging Soul</li>
+		<li>Magnetic Shroud</li>
+		<li>Lightning Breath</li>
+		  
+		  
+      </ul>
+    </div>
+  </div>
+  <div class="boss-tactic">
+    <h2 class="birthstone-regular" style="font-weight: bold;">Tactics</h2>
+
+     
+
+<li class="content montserrat-font">A boss idéz egy lightning gömböt, ami a földön szétszóródik, ebből nagyon gyorsan ki kell állni.</li>
+
+<li class="content montserrat-font"> 50%-nál váltani kell a serpentre amit meg kell ölni,
+</li>
+
+<li class="content montserrat-font"> Ezután a boss melee attackkal fog területizni, ki kell healelni.
+</li>
+
+  </div>
+</div>
+	<div class="boss-container">
+  <div class="boss-info">
+    <div class="boss-image">
+      <img src="shadowpan_monastery/snowdrift.PNG" alt="Boss neve">
+    </div>
+    <div class="boss-name montserrat-font"> Master Snowdrift</div>
+    <div class="boss-hp">HP: 675.450 </div>
+    <div class="boss-spells">
+      <ul>
+        <li>Fists of Fury</li>
+        <li>Tornado Kick</li>
+        <li>Ball of Fire </li>
+		 <li>Tornado Slam </li>
+		 <li> Parry Stance </li>
+		 <li> Quivering Palm</li>
+		 <li> Unleash Vibrations </li>
+		 <li> Flying Kick </li>
+      </ul>
+    </div>
+  </div>
+  <div class="boss-tactic">
+    <h2 class="birthstone-regular" style="font-weight: bold;">Tactics</h2>
+
+     
+
+<li class="content montserrat-font">Fists of Fury-nál mindenki mögé áll (folyamatosan maga elé üt)</li>
+
+<li class="content montserrat-font"> Tornado kicknél elkezd pörögni a boss, el kell állni a közeléből.</li>
+
+<li class="content montserrat-font"> Amikor Parry stanc-ben van, nem szabad ütni</li>
+
+<li class="content montserrat-font">el kell kerülni a labdákat.</li>
+  </div>
+</div>
+	<div class="boss-container">
+  <div class="boss-info">
+    <div class="boss-image">
+      <img src="shadowpan_monastery/sha.PNG" alt="Boss neve">
+    </div>
+    <div class="boss-name montserrat-font">The Sha of Violence</div>
+    <div class="boss-hp">HP: 675.450 </div>
+    <div class="boss-spells">
+      <ul>
+        <li>Disorienting Smash </li>
+        <li>Smoke Blades </li>
+        <li>Parting Smoke </li>
+		 <li> Sha Spike </li>
+		  <li>Enrage </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="boss-tactic">
+    <h2 class="birthstone-regular" style="font-weight: bold;">Tactics</h2>
+
+     
+
+<li class="content montserrat-font">A Tanknak el kell kerülnie a Disorienting Smash-t, ha eltalálja akkor a boss a legnagyobb aggrójú emberre fog aggrózni a tank után.</li>
+
+<li class="content montserrat-font"> Kerüld el füstöt</li>
+
+<li class="content montserrat-font">Az enrage-re kell tartogatni a tank cd-ket</li>
+
+  </div>
+</div>
+		<div class="boss-container">
+  <div class="boss-info">
+    <div class="boss-image">
+      <img src="shadowpan_monastery/taranzhu.PNG" alt="Boss neve">
+    </div>
+    <div class="boss-name montserrat-font">Taran Zhu</div>
+    <div class="boss-hp">HP: 675.450 </div>
+    <div class="boss-spells">
+      <ul>
+		  
+        <li>Haze of Hate</li>
+        <li>Meditate </li>
+        <li>Rising Hate </li>
+		 <li>Ring of Malice</li>
+		 <li>Sha Blast</li>
+		 <li>Gripping Hatred</li>
+		 <li>Grip of Hate </li>
+         <li>Pool of Shadows</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="boss-tactic">
+    <h2 class="birthstone-regular" style="font-weight: bold;">Tactics</h2>
+
+     
+
+<li class="content montserrat-font">Lesznek lila területik, amiket lehet ölni, ezeket meg kell ölni gyorsan, és utána ölni a bosst.</li>
+
+<li class="content montserrat-font">Ha fel megy a csíkunk akkor rá kell nyomni a spellre.</li>
+    
+</div>
+  </div>
+	<footer>
+	<div class="montserrat-font">Web design: <a href="https://dzsozeph.github.io/portfolio-minimal/" target="_blank" style="font-style: bold; color: rgba(51,255,245,1.00);>">Jonas webdevelopment </a> (R) Copyright 2025</div>
+	</footer>
+</body>
+</html>

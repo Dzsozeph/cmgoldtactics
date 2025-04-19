@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body, html {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.scroll-down-button {
+  position: absolute;
+  background-image: url("scrolldown2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 35vh;
+  right: 3vw;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 20px;
+
+}
+
+.scroll-down-button:hover {
+	box-shadow: 0 0 20px black;
+
+}
+
+.scroll-up-button {
+  position: absolute;
+  background-image: url("scrollup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  botton: 10vh;
+  right: 3vw;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 20px;
+
+
+}
+
+.scroll-up-button:hover {
+	box-shadow: 0 0 20px black;
+
+}
+.logo{
+	position: absolute;
+	top: 15vh;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	width: 20rem;
+	height: 20rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url("logo.png");
+	background-size: cover;
+
+}
+
+main {
+  text-align: center;
+  width: 90%;
+  margin: 20px auto;
+  padding: 60px;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  background-image: url("header2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 oszlop */
+  gap: 20px; /* térköz a kártyák között */
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+	
+.grid-container > *:hover {
+  box-shadow: 2px 2px 60px black;
+}
+
+ul {
+  list-style: none;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* biztosítja, hogy a lista függőlegesen jelenjen meg */
+  height: 30vh; /* fix magasságot adhatunk, ha kell */
+}
+	
+ul h1 {
+	font-size: 1.3rem;
+	color: white;
+	position: relative;
+    bottom: 0;
+	text-shadow: 0 0 20px black;
+	overflow: hidden; /* fontos, hogy ne lógjon ki a pszeudoelem */
+	z-index: 1;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+ul h1::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8); /* sötét overlay */
+	transition: opacity 0.3s ease;
+	z-index: -1; /* hogy a szöveg fölött maradjon */
+	border-radius: 5px;
+}
+
+li p {
+	position: relative;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+	text-shadow: 2px 2px 10px white;
+	padding: 5px 10px;
+	margin: 5px 0;
+	z-index: 1;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+li p::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7); /* sötét overlay */
+	transition: opacity 0.3s ease;
+	z-index: -1; /* szöveg fölött maradjon */
+	border-radius: 5px;
+}
+ul a {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li {
+  display: none; /* Kezdetben rejtett */
+  pointer-events: none;
+}
+
+ul:hover li {
+  display: block; /* Kattintásra megjelennek */
+}
+
+h1 {
+  color: red;
+  text-shadow: 0 0 3px white;
+}
+
+h2{
+	color:white;
+}
+
+	#card1{
+		background-image: url("jade.webp");
+		background-position: top -80px left 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: black;
+		height: 30vh;
+		border-radius: 30px;
+
+	}
+		#card2{
+		background-image: url("brew.webp");
+			background-position: top -80px left 0;
+		background-size: cover;
+		background-color: black;
+	    background-repeat: no-repeat;
+		height: 30vh;
+		border-radius: 30px;
+	}
+		#card3{
+		background-image: url("gate.webp");
+		background-position: top -80px left 0;
+	    background-size: cover;
+		background-color: black;
+		background-repeat: no-repeat;
+		height: 30vh;
+		border-radius: 30px;
+	}
+		#card4{
+		background-image: url("shadowpan.jpg");
+		background-position: top -80px left 0;
+		background-size: cover;
+		background-color: black;
+		background-repeat: no-repeat;
+		height: 30vh;
+		border-radius: 30px;
+	}
+		#card5{
+		background-image: url("siege2.webp");
+			background-position: top -80px left 0;
+		background-size: cover;
+		background-color: black;
+		background-repeat: no-repeat;
+		height: 30vh;
+			border-radius: 30px;
+	}
+		#card6{
+		background-image: url("mogu.webp");
+			background-position: top -80px left 0;
+		background-size: cover;
+		background-color: black;
+		background-repeat: no-repeat;
+		height: 30vh;
+			border-radius: 30px;
+			
+	}
+		#card7{
+		background-image: url("scholomance.jpg");
+		background-position: bottom 20px;
+		background-size: cover;
+		background-color: black;
+		background-repeat: no-repeat;
+		height: 30vh;
+			border-radius: 30px;
+	}
+		#card8{
+		background-image: url("scarlethall.webp");
+			background-position: top -80px left 0;
+		background-size: cover;
+		background-color: black;
+		background-repeat: no-repeat;
+		height: 30vh;
+			border-radius: 30px;
+	}
+		#card9{
+		background-image: url("monastery.jpg");
+		background-position: bottom -50px;
+		background-size: cover;
+		background-color: black;
+		background-repeat: no-repeat;
+		height: 30vh;
+		border-radius: 30px;
+	}
+
+footer{
+	width: 100%;
+	height: 5vh;
+	position: relative;
+	bottom: 0;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(0,0,0,0.85);
+	color: white;
+	font-size: 0.9rem;
+	padding: 15px;
+}
