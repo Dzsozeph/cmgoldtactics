@@ -32,12 +32,14 @@
 	#card7, 
 	#card8, 
 	#card9  {	
-	width: 120%!important;
+	width: 160%!important;
     height: 40vh!important;
     margin: 0 auto;   /* középre igazítja */
     position: relative; /* inkább relative, hacsak nem akarsz abszolút elrendezést */
 	align-content: center;
 	justify-content: center;
+	box-sizing: border-box;
+	right: 14vw;
 
   }
 }
