@@ -5,9 +5,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Luxurious+Script&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 	/* --------------------------------------------------------MEDIA QUERYK--------------------------------------------*/
+	
+	
+	@media (max-width: 768px) {
+  .boss-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boss-info {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .boss-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .boss-tactic {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
 	.montserrat-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -73,7 +96,6 @@ header {
   padding: 3rem;
   background-color: #1a1a1a;
   color: #f0f0f0;
-
   max-width: 80vw;
   margin: 0 auto;
 }
