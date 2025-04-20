@@ -252,6 +252,104 @@ background-position: center;
 	font-size: 0.9rem;
 	padding: 15px;
 }
+	
+	.grid-spellscontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Egyenlő oszlopok */
+  gap: 20px;
+	 transition: transform 0.3s ease;
+
+}
+	
+	.grid-spellscontainer:hover { 
+		 transform: scale(1.05);
+}
+	
+	#pic1 {
+  background-image: url("temple/corrupted_waters.PNG");
+}
+
+#pic2 {
+  background-image: url("temple/water_bubble.PNG");
+}
+
+#pic3 {
+  background-image: url("temple/corrupting_waters.PNG");
+}
+	
+	#pic4 {
+  background-image: url("temple/intensity.PNG");
+}
+
+#pic5 {
+  background-image: url("temple/dissipitation.PNG");
+}
+
+#pic6 {
+  background-image: url("");
+}
+	
+	#pic7 {
+  background-image: url("temple/serpent_strike.PNG");
+}
+
+#pic8 {
+  background-image: url("temple/serpent_kick.PNG");
+}
+
+#pic9 {
+  background-image: url("temple/serpent_wave.PNG");
+}
+	#pic10 {
+  background-image: url("temple/wither_will.PNG");
+}
+
+#pic11 {
+  background-image: url("temple/touch_of_nothingness.PNG");
+}
+
+#pic12 {
+  background-image: url("temple/gathering_doubt.PNG");
+	background-repeat: no-repeat;
+}
+	
+	#pic1, #pic2, #pic3{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+	
+	#pic4, #pic5, #pic6{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+		#pic7, #pic8, #pic9{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+		#pic10, #pic11, #pic12{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 	</style>
 	
 	
@@ -291,7 +389,11 @@ background-position: center;
 <li class="content montserrat-font"> Ne állj bele a vízbe.</li>
  <strong style="color:red;" class="content">Köztes fázis:</strong>
 	  	  <li class="content montserrat-font">Körbe körbe kell futni, hogy elkerüljük a castolt vizes szarját.</li>
-
+	  	 <div class="grid-spellscontainer">
+		<div id="pic1"></div>	
+		<div id="pic2"></div>
+		<div id="pic3"></div>	
+  </div>  
   </div>
 </div>
 	<div class="boss-container">
@@ -328,6 +430,11 @@ background-position: center;
 
 	  
 	  <li class="content montserrat-font"> Az előbb említett 70%-nál és 30%-nál jönni fog 3 add, amit lekell ölni.</li>
+	  	 <div class="grid-spellscontainer">
+		<div id="pic4"></div>	
+		<div id="pic5"></div>
+		<div id="pic6"></div>	
+  </div>  
   </div>
 </div>
 	<div class="boss-container">
@@ -340,7 +447,7 @@ background-position: center;
     <div class="boss-spells">
       <ul>
         <li>Serpent Strike  </li>
-        <li>FSerpent Kick </li>
+        <li>Serpent Kick </li>
         <li>Serpent Wave </li>
 
       </ul>
@@ -355,7 +462,11 @@ background-position: center;
 
 <li class="content montserrat-font"> 30%-nál a állj ki a zöld tócsából.</li>
 
-
+  	 <div class="grid-spellscontainer">
+		<div id="pic7"></div>	
+		<div id="pic8"></div>
+		<div id="pic9"></div>	
+  </div> 
 
   </div>
 </div>
@@ -388,7 +499,11 @@ Gyorsan meg kell ölni az addokat.</li>
 
 <li class="content montserrat-font"> Dispellezni kell a debuffot. </li>
 
-
+	 <div class="grid-spellscontainer">
+		<div id="pic10"></div>	
+		<div id="pic11"></div>
+		<div id="pic12"></div>	
+  </div> 
 	  
 </div>
   </div>
