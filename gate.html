@@ -254,6 +254,103 @@ background-position: center;
 	font-size: 0.9rem;
 	padding: 15px;
 }
+.grid-spellscontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Egyenlő oszlopok */
+  gap: 20px;
+	 transition: transform 0.3s ease;
+
+}
+	
+	.grid-spellscontainer:hover { 
+		 transform: scale(1.05);
+}
+#pic1, #pic2, #pic3{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+	
+	#pic4, #pic5, #pic6{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+	
+		#pic7, #pic8, #pic9{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+	
+			#pic10, #pic11, #pic12{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#pic1 {
+  background-image: url("gate/sabotage.PNG");
+}
+
+#pic2 {
+  background-image: url("gate/aiquest.PNG");
+}
+
+#pic3 {
+  background-image: url("gate/worldinflames.PNG");
+}
+	
+	#pic4 {
+  background-image: url("gate/prey_time.PNG");
+}
+
+#pic5 {
+  background-image: url("gate/impailing_strike.PNG");
+}
+
+#pic6 {
+  background-image: url("gate/strafing_run.PNG");
+}
+	
+	#pic7 {
+  background-image: url("gate/vicious_fluid.PNG");
+}
+
+#pic8 {
+  background-image: url("gate/frenzied_assault.PNG");
+}
+
+#pic9 {
+  background-image: url("gate/bombard.PNG");
+}
+	#pic10 {
+  background-image: url("gate/impervious_carapace.PNG");
+}
+
+#pic11 {
+  background-image: url("gate/vunerability.PNG");
+}
+
+#pic12 {
+  background-image: url("gate/battering_headbutt.PNG");
+	background-repeat: no-repeat;
+}
 	</style>
 	
 	
@@ -276,7 +373,7 @@ background-position: center;
     <div class="boss-spells">
       <ul>
         <li>Sabotage</li>
-        <li>Throw Explosives </li>
+        <li>Throw Explosives</li>
         <li>World in Flames</li>
       </ul>
     </div>
@@ -292,8 +389,18 @@ background-position: center;
 <li class="content montserrat-font"> Hogyha rád castolja a Sabotage nevű spellt, akkor menj valamelyik kapuhoz (észak,dél,kelet,nyugat) és kerüld el a tűzet</li>
 
 <li class="content montserrat-font"> 60%-nál és 30%-nál a boss elnyomja a World in Flames nevű képességét, ami felgyújtja az egész termet, ezt a healereknek ki kell healelni</li>
-
+	  
+	  		 <div class="grid-spellscontainer">
+		<div id="pic1"></div>	
+		<div id="pic2"></div>
+		<div id="pic3"> </div>	
+			 
+			 	
+			
+				 
+	 </div>
   </div>
+
 </div>
 	<div class="boss-container">
   <div class="boss-info">
@@ -325,8 +432,14 @@ background-position: center;
 <li class="content montserrat-font">Amikor a boss 70% és 30% életerőhöz ér, felszáll és ledob egy bombát a platformra, amit ellep a tűz, ez a tűz 10k dmg oszt ki 1 mp alatt, ebből egy csoportba ki kell állni oldalra.</li>
 	  
 	  <li class="content montserrat-font"> Az előbb említett 70%-nál és 30%-nál jönni fog 3 add, amit lekell ölni.</li>
+	  	 <div class="grid-spellscontainer">
+		<div id="pic4"></div>	
+		<div id="pic5"></div>
+		<div id="pic6"></div>	
   </div>
+		
 </div>
+		</div>
 	<div class="boss-container">
   <div class="boss-info">
     <div class="boss-image">
@@ -353,7 +466,11 @@ background-position: center;
 <li class="content montserrat-font"> Néhány másodpercenként addok fognak jönni, ezeket a tanknak meg kell fognia, és gyorsan meg kell ölni őket</li>
 
 <li class="content montserrat-font">Amikor a boss a Frenzied Assault képességet castolja ki kell állni előle a tanknak.</li>
-
+ <div class="grid-spellscontainer">
+		<div id="pic7"></div>	
+		<div id="pic8"></div>
+		<div id="pic9"></div>	
+  </div>
   </div>
 </div>
 		<div class="boss-container">
@@ -392,7 +509,11 @@ background-position: center;
 
 <li class="content montserrat-font">- Castolni fog egy Stomp nevű képességet ami 20k physical dmg-t okoz a közelben álló embereknek, és ez a Frenzy-vel tovább nő 25%-kal, ezt vagy kihealeli a heal, vagy kicsit áltávolodunk a bosstól.</li>
 	  
-	  
+  	 <div class="grid-spellscontainer">
+		<div id="pic10"></div>	
+		<div id="pic11"></div>
+		<div id="pic12"></div>	
+  </div>
 </div>
   </div>
 	<footer>
