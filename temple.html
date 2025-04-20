@@ -190,6 +190,12 @@ background-position: center;
   list-style: none;
 }
 
+	
+.boss-spells li{
+		padding: 7px;
+	   cursor: grab;
+	   
+	}
 .boss-tactic {
   flex: 1;
   background-color: #2b2b2b;
@@ -254,19 +260,25 @@ background-position: center;
 }
 	
 	.grid-spellscontainer {
+		
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Egyenlő oszlopok */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-	 transition: transform 0.3s ease;
+  transition: scale
+  margin: 20px;
 
 }
-	
-	.grid-spellscontainer:hover { 
-		 transform: scale(1.05);
+/*
+.grid-spellscontainer > div {
+  height: 100px; /* vagy 150px attól függően mekkora kell 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 	
 	#pic1 {
-  background-image: url("temple/corrupted_waters.PNG");
+  background-image: url("temple/corrupted_waters2.png");
 }
 
 #pic2 {
@@ -278,7 +290,7 @@ background-position: center;
 }
 	
 	#pic4 {
-  background-image: url("temple/intensity.PNG");
+  background-image: url("temple/hydrolance.PNG");
 }
 
 #pic5 {
@@ -317,7 +329,7 @@ background-position: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -327,7 +339,7 @@ background-position: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -336,7 +348,7 @@ background-position: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -345,10 +357,45 @@ background-position: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van */
+  aspect-ratio: 4 / 3; /* vagy height: auto, ha fix szélességed van 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+*/	
+	.spell {
+  position: relative;
+  transition: background-image 0.3s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: 999999999;
+
+}
+/* Egyedi háttérképek hover-re 
+.spell1:hover {
+  background-image: url('temple/corrupted_waters.PNG');
+}
+
+.spell2:hover {
+  background-image: url('images/dissipation.png');
+}
+
+.spell3:hover {
+  background-image: url('images/strife.png');
+}
+
+.spell4:hover {
+  background-image: url('images/peril.png');
+}
+	*/
+	#spell-preview {
+  position: absolute;
+  left: 30%;
+  bottom: 5vh;
+  display: none;
+  pointer-events: none;
+  z-index: 1000;
 }
 	</style>
 	
@@ -370,12 +417,13 @@ background-position: center;
     <div class="boss-hp">HP: 843.100 </div>
     <div class="boss-spells">
       <ul>
-        <li>Corrupted Waters</li>
-        <li>Water Bubble</li>
-        <li>Corrupting Waters</li>
-		<li>Call Water</li> 
+         <li class="spell" data-img="temple/corrupted_waters2.PNG">Corrupted Waters</li>
+        <li class="spell" data-img="temple/water_bubble.PNG">Water Bubble</li>
+        <li class="spell" data-img="temple/corrupting_waters.PNG">Call Water</li>
+		<li class="spell" data-img="temple/hydrolance.PNG">Hydrolance</li> 
       </ul>
     </div>
+	  <img id="spell-preview" src="placeholder.png" alt="spell image">
   </div>
   <div class="boss-tactic">
     <h2 class="birthstone-regular" style="font-weight: bold;">Tactics</h2>
@@ -388,12 +436,7 @@ background-position: center;
 
 <li class="content montserrat-font"> Ne állj bele a vízbe.</li>
  <strong style="color:red;" class="content">Köztes fázis:</strong>
-	  	  <li class="content montserrat-font">Körbe körbe kell futni, hogy elkerüljük a castolt vizes szarját.</li>
-	  	 <div class="grid-spellscontainer">
-		<div id="pic1"></div>	
-		<div id="pic2"></div>
-		<div id="pic3"></div>	
-  </div>  
+	  	  <li class="content montserrat-font">Körbe körbe kell futni, hogy elkerüljük a castolt vizes szarját.</li> 
   </div>
 </div>
 	<div class="boss-container">
@@ -405,10 +448,10 @@ background-position: center;
     <div class="boss-hp">HP: 675.450 </div>
     <div class="boss-spells">
       <ul>
-        <li>Intensity </li>
-        <li>Dissipation</li>
-        <li>Strife</li>
-		 <li>Peril</li>
+        <li class="spell" data-img="/gate/intensity.PNG">Intensity </li>
+        <li class="spell" data-img="/gate/intensity.PNG">Dissipation</li>
+        <li class="spell" data-img="/gate/intensity.PNG">Strife</li>
+		<li class="spell" data-img="/gate/intensity.PNG">Peril</li>
       </ul>
     </div>
   </div>
@@ -431,7 +474,7 @@ background-position: center;
 	  
 	  <li class="content montserrat-font"> Az előbb említett 70%-nál és 30%-nál jönni fog 3 add, amit lekell ölni.</li>
 	  	 <div class="grid-spellscontainer">
-		<div id="pic4"></div>	
+			
 		<div id="pic5"></div>
 		<div id="pic6"></div>	
   </div>  
@@ -510,5 +553,22 @@ Gyorsan meg kell ölni az addokat.</li>
 	<footer>
 	<div class="montserrat-font">Web design: <a href="https://dzsozeph.github.io/portfolio-minimal/" target="_blank" style="font-style: bold; color: rgba(51,255,245,1.00);>">Jonas webdevelopment </a> (R) Copyright 2025</div>
 	</footer>
+	
+	<script>
+	const spells = document.querySelectorAll('.spell');
+const preview = document.getElementById('spell-preview');
+
+spells.forEach(spell => {
+  spell.addEventListener('mouseenter', () => {
+    const img = spell.getAttribute('data-img');
+    preview.src = img;
+    preview.style.display = 'block';
+  });
+  
+  spell.addEventListener('mouseleave', () => {
+    preview.style.display = 'none';
+  });
+});
+	</script>
 </body>
 </html>
